@@ -1,0 +1,27 @@
+carlosgazzani1979@gmail.com;
+acopantepuy@gmail.com;
+franklinnino1301@gmail.com;
+
+https://dolarhoy.com/empresas/jensen-huang-ceo-de-nvidia-afirmo-que-el-65-del-pbi-mundial-sera-aumentado-por-la-ia-202510171240
+
+1) Acceder a Bootstrapmade
+https://bootstrapmade.com
+Se elige y descarga una plantilla.
+
+2) Una vez descargada, se descomprime para
+observar su contenido con el editor Visual Studio Code.
+Descarga e instalación.
+https://code.visualstudio.com/docs/setup/windows
+
+3) Se le va a indicar al prompt de gemini:
+Rol, contexto y tarea a realizar
+
+Asume el rol de experto en desarrollo web, toma el archivo anexo y adapta su contenido al negocio de restauranes tomando en cuenta todas las consideraciones para ofrecer un conjunto de carcterísticas atractivas en este ambito de negocio. Se deben respetar las características del diseño, imagenes, color , estilo de letras, efectos, es decir todos los aspectos relacionados con el diseño visual de la página. Asigna un nombre sugerente de la calidad del sitio web.
+
+CREAR CUENTA EN:
+https://www.alwaysdata.com/en/
+
+Elegir la opción gratuita.
+
+
+
