@@ -4,369 +4,139 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Restaurante Gourmet - Torre TFC</title>
-  <meta name="description" content="Experiencia gastronómica exclusiva en la Torre TFC">
-  <meta name="keywords" content="restaurante, gourmet, torre tfc, cena, eventos">
+  <title>Gourmet TFC - Experiencia Gastronómica</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Inter:wght@400;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    :root { --color-primary: #ce1212; --color-secondary: #37373f; }
+    body { font-family: 'Inter', sans-serif; color: var(--color-secondary); }
+    h1, h2, h3, h4 { font-family: 'Amatic SC', cursive; }
+    .hero { background: #f2f2f2; padding: 60px 0; }
+    .hero h1 { font-size: 64px; font-weight: 700; color: var(--color-secondary); }
+    .btn-book { background: var(--color-primary); color: white; padding: 10px 30px; border-radius: 50px; text-decoration: none; }
+    .menu-item img { border-radius: 8px; margin-bottom: 15px; width: 100%; height: 250px; object-fit: cover; }
+    .section-title h2 { text-align: center; color: #7f7f90; font-size: 13px; letter-spacing: 1px; font-weight: 400; margin: 0; padding: 0; }
+    .section-title p { text-align: center; font-size: 48px; font-family: 'Amatic SC'; }
+    .section-title p span { color: var(--color-primary); }
+  </style>
 </head>
 
-<body class="index-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">Gourmet TFC</h1>
-        <span>.</span>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#menu">Menú</a></li>
-          <li><a href="#events">Eventos</a></li>
-          <li><a href="#chefs">Chefs</a></li>
-          <li><a href="#gallery">Galería</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="p-3 border-bottom sticky-top bg-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="m-0" style="font-size: 35px;">Gourmet TFC<span>.</span></h1>
+      <nav class="d-none d-md-block">
+        <a href="#hero" class="px-2 text-dark text-decoration-none">Inicio</a>
+        <a href="#menu" class="px-2 text-dark text-decoration-none">Menú</a>
+        <a href="#contact" class="px-2 text-dark text-decoration-none">Contacto</a>
       </nav>
-
-      <a class="btn-getstarted" href="#book-a-table">Reservar Mesa</a>
-
+      <a href="#book" class="btn-book">Reservar Mesa</a>
     </div>
   </header>
 
-  <main class="main">
-
-    <section id="hero" class="hero section light-background">
+  <main>
+    <section id="hero" class="hero d-flex align-items-center">
       <div class="container">
-        <div class="row gy-4 justify-content-center justify-content-lg-between">
-          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Saborea la Perfección<br>en cada Bocado</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Descubre una experiencia gastronómica donde los ingredientes frescos se transforman en arte culinario para tu paladar.</p>
+        <div class="row justify-content-between gy-5">
+          <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+            <h1 data-aos="fade-up">Saborea la<br>Perfección Gourmet</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Ubicados en la prestigiosa Torre TFC, ofrecemos una experiencia culinaria de clase mundial para los paladares más exigentes.</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#book-a-table" class="btn-get-started">Reserva Ahora</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver Experiencia</span></a>
+              <a href="#book" class="btn-book">Reserva Ahora</a>
             </div>
           </div>
-          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Plato Principal">
+          <div class="col-lg-5" data-aos="zoom-out">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-circle shadow" alt="Plato Gourmet">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nosotros</h2>
-        <p><span>Conoce más</span> <span class="description-title">Sobre Gourmet TFC</span></p>
-      </div>
+    <section id="menu" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Menú</h2>
+          <p>Explora nuestra <span>Selección</span></p>
+        </div>
 
-      <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="Interior Restaurante">
-            <div class="book-a-table">
-              <h3>Reservas Directas</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
+          <div class="col-lg-4 menu-item">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Corte Premium">
+            <h4>Filete Mignon TFC</h4>
+            <p>Corte premium madurado, acompañado de espárragos al grill.</p>
+            <p class="fw-bold text-danger">$28.50</p>
           </div>
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Ubicados en el corazón de la Torre TFC, ofrecemos una fusión única de técnica tradicional y creatividad moderna.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ingredientes orgánicos de proveedores locales seleccionados.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ambiente exclusivo con vista panorámica a la ciudad.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Protocolos de seguridad y privacidad garantizados para ejecutivos.</span></li>
-              </ul>
-              <p>
-                Cada plato es una historia escrita por nuestros chefs, diseñada para elevar tus sentidos y convertir una comida ordinaria en un recuerdo inolvidable.
-              </p>
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-              </div>
-            </div>
+          <div class="col-lg-4 menu-item">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pasta">
+            <h4>Pasta Trufada</h4>
+            <p>Pasta artesanal con crema de trufa negra y parmesano reggiano.</p>
+            <p class="fw-bold text-danger">$22.00</p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Postre">
+            <h4>Domo de Chocolate</h4>
+            <p>Chocolate 70% cacao con centro líquido y frutos rojos.</p>
+            <p class="fw-bold text-danger">$12.00</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="why-us" class="why-us section light-background">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>¿Por qué Gourmet TFC?</h3>
-              <p>
-                No solo servimos comida; creamos momentos. Nuestra ubicación estratégica y nuestro compromiso con la excelencia nos convierten en el referente gastronómico de la zona.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn"><span>Nuestra Historia</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="col-xl-4">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Cortes Premium</h4>
-                  <p>Selección rigurosa de carnes con procesos de maduración controlados.</p>
-                </div>
-              </div>
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Servicio VIP</h4>
-                  <p>Atención personalizada para altos ejecutivos y eventos privados.</p>
-                </div>
-              </div>
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Cava Exclusiva</h4>
-                  <p>Maridaje perfecto con etiquetas nacionales e internacionales.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="menu" class="menu section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nuestro Menú</h2>
-        <p><span>Explora el</span> <span class="description-title">Sabor Gourmet</span></p>
-      </div>
-
-      <div class="container">
-        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters"><h4>Entradas</h4></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch"><h4>Almuerzos</h4></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner"><h4>Cenas</h4></a>
-          </li>
-        </ul>
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          <div class="tab-pane fade active show" id="menu-starters">
-            <div class="tab-header text-center">
-              <p>Menú</p>
-              <h3>Entradas de Autor</h3>
-            </div>
-            <div class="row gy-5">
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Carpaccio de Trufa</h4>
-                <p class="ingredients">Finas láminas de res, aceite de trufa, parmesano.</p>
-                <p class="price">$15.95</p>
-              </div>
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Ceviche TFC</h4>
-                <p class="ingredients">Pesca del día, leche de tigre, camote glaseado.</p>
-                <p class="price">$18.95</p>
-              </div>
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Burrata Caprese</h4>
-                <p class="ingredients">Tomates cherry, albahaca fresca, reducción de balsámico.</p>
-                <p class="price">$14.50</p>
-              </div>
-            </div>
-          </div>
-          </div>
-      </div>
-    </section>
-
-    <section id="events" class="events section">
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": { "delay": 5000 },
-              "slidesPerView": "auto",
-              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
-              "breakpoints": { "320": { "slidesPerView": 1, "spaceBetween": 40 }, "1200": { "slidesPerView": 3, "spaceBetween": 1 } }
-            }
-          </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <h3>Cenas de Negocios</h3>
-              <div class="price align-self-start">$150/pax</div>
-              <p class="description">Privacidad total y menús ejecutivos diseñados para cerrar grandes acuerdos.</p>
-            </div>
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
-              <h3>Eventos Privados</h3>
-              <div class="price align-self-start">$500/base</div>
-              <p class="description">Alquiler de salones exclusivos para celebraciones personales o lanzamientos de marca.</p>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="book-a-table" class="book-a-table section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Reservas</h2>
-        <p><span>Asegura tu</span> <span class="description-title">Lugar con Nosotros</span></p>
-      </div>
-
-      <div class="container">
-        <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
-            <form action="mailto:gerencia.jdc@torretfc.com" method="post" enctype="text/plain" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre" required>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Tu Correo" required>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="telefono" placeholder="Tu Teléfono" required>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="date" name="fecha" class="form-control" required>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="time" class="form-control" name="hora" required>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="personas" placeholder="# Personas" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="mensaje" rows="5" placeholder="Observaciones especiales"></textarea>
-              </div>
-              <div class="text-center mt-3">
-                <button type="submit">Confirmar Reserva</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contacto</h2>
-        <p><span>¿Necesitas ayuda?</span> <span class="description-title">Contáctanos</span></p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="mb-5">
-          <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTorre+TFC!5e0!3m2!1sen!2sus!4v1567890123456" frameborder="0" allowfullscreen=""></iframe>
+    <section id="contact" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Estamos en la <span>Torre TFC</span></p>
         </div>
 
         <div class="row gy-4">
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Dirección</h3>
-                <p>Torre TFC, Nivel Ejecutivo, Calle Principal 123</p>
-              </div>
+            <div class="p-4 bg-white shadow-sm rounded">
+              <i class="bi bi-envelope text-danger fs-3"></i>
+              <h4>Gestión de Reservas</h4>
+              <p>gerencia.jdc@torretfc.com</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Llámanos</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Correos Electrónicos</h3>
-                <p>Atención: gerencia.jdc@torretfc.com<br>Accesos: seguridad.jdc@torretfc.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-clock flex-shrink-0"></i>
-              <div>
-                <h3>Horarios de Apertura</h3>
-                <p><strong>Lun-Sáb:</strong> 11AM - 11PM; <strong>Domingo:</strong> Cerrado</p>
-              </div>
+            <div class="p-4 bg-white shadow-sm rounded">
+              <i class="bi bi-shield-check text-danger fs-3"></i>
+              <h4>Control de Acceso</h4>
+              <p>seguridad.jdc@torretfc.com</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div>
-            <h4>Ubicación</h4>
-            <p>Torre TFC, Ciudad Empresarial</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contacto Directo</h4>
-            <p><strong>Gerencia:</strong> gerencia.jdc@torretfc.com</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h4>Síguenos</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Gourmet TFC</strong> <span>Todos los derechos reservados</span></p>
-    </div>
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+  </script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69a71b85b326341c3a98c19b/1jiqc70mt';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>

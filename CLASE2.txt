@@ -1,0 +1,109 @@
+PROMPT:
+Estoy observando que las imagenes no se están cargando, así como el contenido generado, basado en lo producido realizar las correcciones del caso. Genera nuevamente el archivo index.html
+
+PROMPT:
+Quiero desplegar en el hosting www.alwaysdata.com el 
+sitio producido, pero no estoy familiariazado con el procedimiento para crear una cuenta gratuita. Se anexa la imagen para iniciar sesión, a los efectos que me des un paso a paso para completar la tarea.
+
+Host ftp: ftp-hduque-test.alwaysdata.net
+Usuario ftp: hduque-test
+Clave: Administrador*1
+Puerto: 21
+
+hduque-test.alwaysdata.net
+https://hduque-test.alwaysdata.net/
+
+https://franklinnino.alwaysdata.net/
+
+
+Al momento de interactuar con herramientas de IA, utilizar abreviaturas o acrónimos específicos ayuda a que el modelo comprenda mejor la estructura, el tono y el objetivo de tu consulta.
+
+Aquí tienes una lista de los términos y métodos abreviados más eficaces para optimizar tus prompts:
+
+### 1. Marcos de Trabajo (Frameworks) para Prompts
+
+Estos acrónimos resumen los elementos que debe tener un buen prompt:
+
+* **RTF (Rol, Tarea, Formato):** Define quién es la IA (Experto), qué debe hacer (Tarea) y cómo entregar el resultado (Formato).
+* **PEC (Prompt, Ejemplo, Contexto):** Se proporciona la instrucción, se da un ejemplo de lo esperado y se añade contexto relevante para limitar la respuesta.
+* **CREATE (Character, Request, Examples, Adjustments, Type, Extras):** Un método exhaustivo que define el personaje, la petición, ejemplos, ajustes de tono, tipo de salida y detalles adicionales.
+* **CARE (Context, Action, Result, Example):** Contexto, Acción, Resultado esperado y Ejemplo.
+
+### 2. Abreviaturas de Formato y Estructura
+
+* **TL;DR (Too Long; Didn't Read):** Se usa al final de un texto largo para pedirle a la IA un resumen ejecutivo muy breve.
+* **Markdown:** No es una abreviatura en sí, pero pedir "Formato MD" le indica a la IA que use negritas, listas, tablas y encabezados para que el texto sea legible.
+* **CSV / JSON:** Para solicitar que la información se entregue en formato de valores separados por comas o en estructura de datos para programación.
+* **CTA (Call to Action):** Muy usado en marketing (como en el caso de ****) para pedirle a la IA que redacte un "Llamado a la acción" sugerente.
+
+### 3. Instrucciones de Control de Respuesta
+
+* **CoT (Chain of Thought):** Se usa pidiendo a la IA que "piense paso a paso". Esto mejora drásticamente la precisión en tareas lógicas o matemáticas.
+* **Few-Shot:** No es una abreviatura, pero se refiere a dar "unos pocos ejemplos" dentro del prompt para que la IA imite un estilo específico.
+* **Zero-Shot:** Cuando lanzas una pregunta directa sin ejemplos previos.
+* **POV (Point of View):** Para pedir que la respuesta sea redactada desde un "Punto de Vista" específico (ej. "POV: Eres un cliente exigente en el restaurante ").
+
+### 4. Técnicas de Refinamiento
+
+* **P-T-P (Prompt-to-Prompt):** Pedirle a la IA que ella misma mejore el prompt que acabas de escribir antes de ejecutar la tarea.
+* **Persona:** Instruir a la IA que adopte una personalidad (ej. "Actúa como un experto en desarrollo web").
+
+En tu caso particular, para seguir desarrollando el sitio de ****, podrías usar: *"Usa el framework RTF: Actúa como experto SEO (Rol), genera 5 meta-descripciones (Tarea) en una tabla Markdown (Formato)"*.
+
+
+Para que puedas aplicar estas técnicas hoy mismo en el desarrollo y promoción de ****, aquí tienes ejemplos prácticos de cómo redactar los prompts utilizando las abreviaturas y marcos de trabajo mencionados:
+
+### 1. Ejemplo con Framework RTF (Rol, Tarea, Formato)
+
+Este es ideal para generar contenido estructurado para tu web.
+
+* **Prompt:** "Actúa como un **Redactor Gastronómico Senior (Rol)**. Escribe una descripción de 3 párrafos para la sección 'Nosotros' de mi restaurante , destacando la fusión entre tecnología y sabor **(Tarea)**. Entrega el resultado en **formato HTML (Formato)** usando etiquetas `<h3>` y `<p>`."
+
+### 2. Ejemplo con CoT (Chain of Thought - Pensar paso a paso)
+
+Úsalo cuando necesites resolver problemas de configuración en el hosting o FileZilla.
+
+* **Prompt:** "Tengo un error 404 en las imágenes de mi sitio  después de subirlo a Alwaysdata. **Piensa paso a paso (CoT)** para identificar si el problema está en la ruta del archivo `index.html`, en los permisos de la carpeta `assets` o en la distinción entre mayúsculas y minúsculas."
+
+### 3. Ejemplo con TL;DR (Resumen Ejecutivo)
+
+Útil para procesar textos largos de proveedores o términos de servicio del hosting.
+
+* **Prompt:** "[Pega aquí un texto largo sobre las políticas de uso de Alwaysdata]. **TL;DR:** Dime en tres puntos clave qué cosas tengo prohibido hacer con mi cuenta gratuita."
+
+### 4. Ejemplo con Framework CARE (Contexto, Acción, Resultado, Ejemplo)
+
+Perfecto para crear campañas de marketing precisas.
+
+* **Contexto:** Estoy lanzando ****, un restaurante de alta cocina tecnológica.
+* **Acción:** Redacta un post para Instagram invitando a una 'Noche Sensorial'.
+* **Resultado:** El tono debe ser elegante y misterioso, enfocado a clientes VIP.
+* **Ejemplo:** Usa frases como 'Donde el algoritmo se encuentra con el paladar'.
+
+### 5. Ejemplo de Formato JSON (Para integración técnica)
+
+Si en el futuro quieres que tu menú sea dinámico.
+
+* **Prompt:** "Toma los platos de mi sección de 'Entrantes' (Esferas de Mar, Bosque Ahumado) y genera una lista de objetos en **formato JSON**. Incluye los campos: `nombre`, `ingredientes`, `precio` y `url_imagen`."
+
+### 6. Ejemplo de Persona y POV (Punto de Vista)
+
+Para probar la experiencia de usuario antes de publicar.
+
+* **Prompt:** "Actúa como una **Persona (Persona)** que es un crítico gastronómico de la Guía Michelin. Lee el contenido de mi página de inicio y dime desde tu **POV (Punto de Vista)** si el lenguaje utilizado en la sección 'Esencia' transmite suficiente exclusividad."
+
+¿Te gustaría que apliquemos alguno de estos ejemplos específicamente para redactar los textos de las "Noches Sensoriales" o las "Galas Corporativas" de ****?
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/692dee6da8d9cb198023b926/1jbdmmn1f';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
