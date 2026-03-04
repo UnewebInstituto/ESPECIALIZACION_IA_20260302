@@ -1,0 +1,158 @@
+INSTALACIÓN DE VPN PROTON A FIN DE ACCEDER A 
+SITIOS DE IA RESTRINGIDAS POR UBICACIÓN GEOGRÁFICA
+1-) Desde Google Chrome acceder a extensiones.
+2-) Seguir la captura de imagenes en la carpeta
+\CLASE3.
+
+
+PROMPT sugerido:
+Asume el rol de experto en Tecnologías de la información
+e Inteligencia Artificial, dame la línea de tiempo de los
+hitos que marcaron el desarrollo de la Inteligencia Artificial.
+
+
+Asume el rol de experto en análisis de imagenes, se quiere extraer el texto contenido en las imagenes del archivo anexo. Produce un documento con dicha extracción donde se conserve el orden y secuencia lógica del flujo que representan estas imagenes.
+
+
+A partir del archivo anexo genera una imagen que describa de manera didáctica el proceso
+
+
+https://www.freepik.com/ai
+
+He diseñado la estructura de una presentación profesional basada en el flujo operativo de la **Unidad de Defensa** extraído de los documentos.
+
+Dado que como IA puedo generar el contenido y la estructura visual, aquí tienes el desglose diapositiva por diapositiva. **Para obtener el archivo PDF**, he preparado el código necesario que puedes copiar en un editor o, si lo prefieres, puedo generar una serie de imágenes descriptivas para cada slide.
+
+---
+
+## Estructura de la Presentación: Protocolo de la Unidad de Defensa
+
+### Diapositiva 1: Portada
+
+* **Título:** Protocolo de Gestión: Unidad de Defensa.
+* **Subtítulo:** Flujos de Recepción, Urgencias y Resolución de Conflictos para el producto **Interaxia**.
+* **Imagen sugerida:**
+
+---
+
+### Diapositiva 2: Recepción y Registro de Denuncias
+
+* **Contenido:**
+* Registro obligatorio en el Sistema Único de Trámite (SUT) con asignación de número correlativo.
+
+
+* Canales de entrada: Escrito, Verbal, Medios Electrónicos y Vía Telefónica.
+
+
+* Conformación de expediente digital cronológico.
+
+
+
+
+* **Imagen sugerida:**
+
+---
+
+### Diapositiva 3: Proceso de Verificación y Subsanación
+
+* **Contenido:**
+* Análisis de improcedencia y verificación de recaudos mínimos (Art. 23 y 27).
+
+
+* Notificación de omisiones al denunciante para su debida subsanación.
+
+
+* Si no se subsana, se procede al cierre y registro en el SUT.
+
+
+
+
+* **Imagen sugerida:**
+
+---
+
+### Diapositiva 4: Lapsos Legales y Emplazamiento
+
+* **Contenido:**
+* Emplazamiento al Sujeto Regulado para alegatos y pruebas.
+
+
+* 
+**Plazo:** 10 días hábiles para respuesta del sujeto regulado.
+
+
+* 
+**Lapso Probatorio:** Apertura de 8 a 20 días hábiles en caso de dudas razonables (Art. 31).
+
+
+
+
+
+---
+
+### Diapositiva 5: Atención de Urgencias (24 Horas)
+
+* **Contenido:**
+* Sujetos: Tomador, Asegurado, Beneficiario, Contratante, Usuario y Afiliado.
+
+
+* Línea telefónica disponible las 24 horas para gestión inmediata.
+
+
+* Notificación obligatoria a la aseguradora o medicina prepagada y registro en SUT.
+
+
+
+
+* **Imagen sugerida:**
+
+---
+
+### Diapositiva 6: Resolución de Conflictos: Audiencias
+
+* **Contenido:**
+* Máximo de tres (3) audiencias para buscar mecanismos de solución.
+
+
+* Segunda audiencia: debe celebrarse dentro de los 5 días continuos a la primera.
+
+
+* 
+**Consecuencia de inasistencia:** El asegurado pierde interés tras 2 faltas; el sujeto regulado es remitido a la SUDEASEG tras la 2da convocatoria.
+
+
+
+
+* **Imagen sugerida:**
+
+---
+
+### Diapositiva 7: Cierre y Remisión a SUDEASEG
+
+* **Contenido:**
+* En caso de acuerdo: Acta de cumplimiento. Si se incumple, se remite a la autoridad.
+
+
+* En caso de desacuerdo: Remisión a la SUDEASEG en 3 días hábiles con informe del Defensor.
+
+
+* Justificación del cierre siempre fundamentada en normativa vigente.
+
+
+
+
+
+---
+
+### ¿Cómo descargar el PDF?
+
+Para entregarte el archivo con este formato profesional y las citas integradas:
+
+1. **Opción A (Inmediata):** Puedo generar una imagen de alta resolución que resuma todo el flujo visualmente para que la guardes.
+2. **Opción B (Documento):** ¿Te gustaría que genere un archivo de texto estructurado compatible con herramientas de presentación para que lo exportes directamente a PDF?
+
+**¿Cuál de estas opciones prefieres para continuar con el soporte de Interaxia?**
+
+
+
+
