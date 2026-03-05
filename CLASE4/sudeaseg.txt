@@ -1,0 +1,53 @@
+graph TD
+    %% Fase 1: Recepción y Trámite
+    Start((Inicio)) --> F1_Rec[Recepción de Denuncia<br/>Escrito, Verbal, Web, Teléfono]
+    F1_Rec --> F1_Reg[Registro en SUT y<br/>Generación de número correlativo]
+    F1_Reg --> F1_Exp[Conformación de Expediente Digital]
+    F1_Exp --> F1_Ver[Verificación de Recaudos<br/>y Análisis de Procedencia]
+    
+    F1_Ver --> F1_Sub{¿Requiere<br/>Subsanación?}
+    F1_Sub -- Sí --> F1_NotSub[Notificación al Denunciante]
+    F1_NotSub --> F1_CheckSub{¿Subsanó?}
+    F1_CheckSub -- No --> F1_Cierre[Registro de situación en SUT y Cierre]
+    F1_CheckSub -- Sí --> F1_Emp[Emplazamiento del Sujeto Regulado<br/>10 días hábiles para alegatos]
+    F1_Sub -- No --> F1_Emp
+
+    F1_Emp --> F1_Prob{¿Dudas<br/>razonables?}
+    F1_Prob -- Sí --> F1_Lapso[Lapso Probatorio<br/>8 a 20 días hábiles]
+    F1_Prob -- No --> F2_Urg
+    F1_Lapso --> F2_Urg
+
+    %% Fase 2: Atención Primaria (Paralelo o Secuencial)
+    subgraph Fase_Urgencias [Fase 2: Medidas de Urgencia]
+        F2_Urg[Línea de Emergencia 24h] --> F2_Proc[Atención y Trámite de Emergencia]
+        F2_Proc --> F2_Not[Notificación a Seguradora/Prepagada]
+        F2_Not --> F2_RegSUT[Registro Obligatorio en SUT]
+    end
+    
+    F2_RegSUT --> F3_Aud
+
+    %% Fase 3: Audiencias
+    subgraph Fase_Audiencias [Fase 3: Audiencias y Resolución]
+        F3_Aud[Convocatoria a Audiencia<br/>Máximo 3]
+        F3_Aud --> F3_Asis{¿Asistencia?}
+        
+        F3_Asis -- Inasistencia Asegurado 2 veces --> F3_FaltaInt[Cierre por Falta de Interés / Archivo]
+        F3_Asis -- Inasistencia Sujeto Regulado --> F3_RemiDirect[Remisión Directa a SUDEASEG]
+        
+        F3_Asis -- Ambos Asisten --> F3_Acuerdo{¿Hay Acuerdo?}
+        
+        F3_Acuerdo -- Sí --> F3_Acta[Levantamiento de Acta de Cumplimiento]
+        F3_Acta --> F3_Incumple{¿Incumple<br/>Sujeto Regulado?}
+        F3_Incumple -- Sí --> F3_RemiSude[Remisión a SUDEASEG]
+        F3_Incumple -- No --> F3_Fin((Fin del Proceso))
+        
+        F3_Acuerdo -- No --> F3_Segunda[Segunda Audiencia<br/>dentro de 5 días]
+        F3_Segunda --> F3_Persiste{¿Persiste<br/>Desacuerdo?}
+        F3_Persiste -- Sí --> F3_RemiSude
+        F3_Persiste -- No --> F3_Acta
+    end
+
+    F3_RemiSude --> F3_Fin
+    F3_RemiDirect --> F3_Fin
+    F3_FaltaInt --> F3_Fin
+    F1_Cierre --> F3_Fin

@@ -1,0 +1,53 @@
+graph TD
+    %% --- ETAPA 1: RECEPCIÓN ---
+    Start((Inicio: Recepción)) --> SUT[Registro en SUT: Genera # de Denuncia]
+    SUT --> Canales{Canales de Recepción}
+    
+    Canales -->|Escrito/Verbal/Electrónico| Analisis[Análisis de la Unidad de Defensa]
+    Canales -->|Vía Telefónica| Tel[Notificar omisiones o faltas]
+    Canales -->|Medidas de Urgencia| Urgencia[Atención Primaria / Urgencia]
+
+    subgraph "Proceso de Análisis (Art. 14, 23, 27, 29)"
+        Analisis --> Conf[Notificar Conflictos de Interés]
+        Conf --> Verif[Verificar Recaudos Mínimos]
+        Verif --> Imp[Analizar Improcedencia]
+    end
+
+    Imp --> Subsanar{¿Subsana?}
+    Subsanar -->|NO| Cierre[Cierre y Registro en SUT]
+    Subsanar -->|SI| Expediente[Conformación de Expediente Digital]
+
+    Expediente --> Emplazamiento[Emplazamiento al Sujeto Regulado]
+    Emplazamiento --> Alegatos[Sujeto Regulado: Expone Alegatos - 10 días hábiles]
+
+    %% --- ETAPA 2: URGENCIAS ---
+    subgraph "Atención Primaria (24 Horas)"
+        Urgencia --> Involucrados[Identificar: Tomador, Asegurado, Beneficiario, etc.]
+        Involucrados --> Gestion[Atender, gestionar y tramitar la emergencia]
+        Gestion --> NotifEmpresa[Notificación a Seguros/Medicina Prepagada]
+        NotifEmpresa --> RegSUT[Registrar denuncia en SUT]
+    end
+
+    %% --- ETAPA 3: AUDIENCIAS ---
+    Alegatos --> Audiencia{¿Convocar Audiencia?}
+    Audiencia -->|SI| CicloAud[Máximo 3 Audiencias - Registro en SUT]
+    
+    CicloAud --> Inasistencia{¿Inasistencia? Art. 34}
+    Inasistencia -->|Asegurado 2 veces| Archivo[Falta de interés: Archivo de Expediente]
+    Inasistencia -->|Sujeto Regulado| SUDEASEG_Rem[Remisión a SUDEASEG]
+
+    CicloAud --> Acuerdo{¿Acuerdo Favorable? Art. 36}
+    Acuerdo -->|SI| Acta[Levantamiento de Acta de Cumplimiento]
+    Acuerdo -->|NO| SegundaAud[2da Audiencia: Máximo 5 días continuos]
+    
+    SegundaAud --> SinAcuerdo[Sin acuerdo tras agotar instancias]
+    SinAcuerdo --> Informe[Elaborar Informe no vinculante - Art. 35]
+    Informe --> SUDEASEG_Final[Remisión a SUDEASEG: Plazo 3 días hábiles]
+
+    Acta --> Incumplimiento{¿Incumple Acuerdo?}
+    Incumplimiento -->|SI| SUDEASEG_Rem
+
+    %% --- CIERRE ---
+    Cierre --> End((Fin del Proceso))
+    SUDEASEG_Final --> End
+    Archivo --> End
